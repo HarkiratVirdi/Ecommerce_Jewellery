@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:destroy": "node jewelleryBackEnd/seeder -d",
     "data:import": "node jewelleryBackEnd/seeder",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix jewellery && npm run build --prefix jewellery"
   },
   "keywords": [],
   "author": "",
