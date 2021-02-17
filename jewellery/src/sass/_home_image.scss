@@ -1,0 +1,42 @@
+.Home_image {
+  grid-column: grid-start/grid-end;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 35.8vw);
+  background-image: url("../images/fullPageEdited.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vw;
+  grid-row: 4;
+  position: relative;
+  z-index: -1;
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    // grid-template-columns: 1fr;
+    grid-column: 1/-1;
+    height: 100vw;
+    grid-template-rows: auto;
+    // grid-row: 4;
+  }
+
+  &_img {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    align-self: center;
+    img {
+      @include imageFluid;
+    }
+  }
+
+  &_content {
+    grid-column: 6/8;
+    grid-row: 2/3;
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+      grid-row: 1/3;
+      grid-column: 5/8;
+      align-self: end;
+    }
+  }
+}

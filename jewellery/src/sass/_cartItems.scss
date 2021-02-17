@@ -1,0 +1,66 @@
+.cartitems {
+  display: flex;
+  flex-direction: column;
+  //   @media only screen and (max-width: $mobile-breakpoint) {
+  //     padding: 0 0 4rem 0;
+  //   }
+  width: 250px;
+
+  &__image {
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+  }
+
+  &__name {
+    width: 65%;
+    flex-wrap: wrap;
+  }
+
+  &__qty {
+    width: 30%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    // justify-content: flex-end;
+  }
+
+  &__qty {
+    // overflow: hidden;
+  }
+
+  &_symbol {
+    transition: all 0.5s;
+  }
+
+  &_symbol_down {
+    transform: rotate(90deg);
+  }
+  &_symbol_up {
+    transform: rotate(-90deg);
+  }
+
+  &_drawer {
+    // height: 10rem;
+
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    background: $color-primary;
+    justify-content: center;
+    align-items: center;
+    // transform: translateY(4rem);
+    transition: all 0.5s;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    // height: 3.5rem;
+    // width: 6.5rem;
+  }
+}

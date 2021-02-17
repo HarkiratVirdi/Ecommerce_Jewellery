@@ -1,0 +1,92 @@
+@mixin imageFluid {
+  width: 100%;
+  object-fit: cover;
+}
+
+.m-hide {
+  @media only screen and (max-width: $mobile-breakpoint) {
+    display: none !important;
+  }
+}
+
+.mt-s {
+  margin-top: 1vw;
+}
+
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.s-hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.s-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.m-Container {
+  width: 95%;
+  margin: auto;
+}
+
+.m-hide {
+  @media only screen and (max-width: $mobile-breakpoint) {
+    display: none;
+  }
+}
+
+.container-80 {
+  padding: 0 5rem;
+  // margin: 0 auto;
+  overflow: hidden;
+  @media only screen and (max-width: $mobile-breakpoint) {
+    padding: 2rem;
+  }
+}
+
+.mt-m {
+  margin-top: 2vw;
+}
+.mt-l {
+  margin-top: 3.5vw;
+}
+.mb-s {
+  margin-bottom: 1.3vw;
+}
+.mb-m {
+  margin-bottom: 2vw;
+}
+.mb-l {
+  margin-bottom: 3.5vw;
+}
+.ml-s {
+  margin-left: 1vw;
+}
+.ml-m {
+  margin-left: 2vw;
+}
+.ml-l {
+  margin-left: 3.5vw;
+}
