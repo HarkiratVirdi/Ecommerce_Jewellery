@@ -28,7 +28,7 @@ const HomeImage = () => {
           toggleActions: "restart pause reverse pause",
           scrub: true,
         },
-        transform: "matrix(1.1,0,0,1.1,0, 0)",
+        transform: "matrix(0.9,0,0,0.9,0, 0)",
       },
       []
     );
