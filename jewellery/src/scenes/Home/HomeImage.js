@@ -5,19 +5,6 @@ import gsap from "gsap";
 const HomeImage = () => {
   let homeImage = useRef(null);
   useEffect(() => {
-    // gsap.to(
-    //   Image2,
-    //   {
-    //     scrollTrigger: {
-    //       trigger: Image2,
-    //       start: "top center",
-    //       toggleActions: "restart pause reverse pause",
-    //       scrub: true,
-    //     },
-    //     y: -20,
-    //   },
-    //   []
-    // );
 
     gsap.to(
       homeImage,
