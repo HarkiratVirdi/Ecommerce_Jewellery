@@ -55,7 +55,7 @@
   &__big_logo {
     font-size: 20vw;
     position: absolute;
-    top: 50%;
+    top: 45%;
     font-family: $font-primary;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -66,7 +66,7 @@
 
   &__logo {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     display: inline-block;
     transition: opacity 0.5s;

@@ -28,7 +28,7 @@ const Register = ({ history, location }) => {
 
   return (
     <form className="login_form" onSubmit={onSubmitHandler}>
-      <div className="heading-4 heading-4--white">Login</div>
+      <div className="heading-4 heading-4--white">Register</div>
       {loading && <Spinner />}
       {error && !loading ? <Message>{error}</Message> : ""}
       <input
