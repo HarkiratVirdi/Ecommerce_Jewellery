@@ -1,32 +1,32 @@
-// .form {
-//   &_field {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
+.form {
+  &_field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-//     @media only screen and (max-width: $mobile-breakpoint) {
-//       flex-direction: column;
-//       width: 100%;
-//       // margin-top: 2rem;
-//       margin-bottom: 2rem;
-//       align-items: flex-start;
-//     }
-//   }
+    @media only screen and (max-width: $mobile-breakpoint) {
+      flex-direction: column;
+      width: 100%;
+      // margin-top: 2rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+  }
 
-//   &_label {
-//     flex: 1;
-//   }
+  &_label {
+    flex: 1;
+  }
 
-//   &_input {
-//     // height: 3rem;
-//     border: none;
-//     outline: none;
-//     flex: 3;
-//     padding: 1rem;
+  &_input {
+    // height: 3rem;
+    border: none;
+    outline: none;
+    flex: 3;
+    padding: 1rem;
 
-//     @media only screen and (max-width: $mobile-breakpoint) {
-//       width: 100%;
-//       //   margin-top: 2rem;
-//     }
-//   }
-// }
+    @media only screen and (max-width: $mobile-breakpoint) {
+      width: 100%;
+      //   margin-top: 2rem;
+    }
+  }
+}
