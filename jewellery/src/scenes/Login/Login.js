@@ -23,14 +23,13 @@ const Login = ({ history, location }) => {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    console.log(email, password);
     dispatch(login(email, password));
   };
 
   const SubmitDemoUser = () => {
     setemail("tira@gmail.com");
     setpassword("123456");
-    dispatch(demoUser(email, password));
+    dispatch(login(email, password));
   };
 
   return (

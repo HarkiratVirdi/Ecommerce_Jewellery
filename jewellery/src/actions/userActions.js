@@ -14,17 +14,6 @@ import {
 } from "../constants/orderConstants";
 import { CART_RESET } from "../constants/cartConstants";
 
-export const demoUser = (email, password) => async (dispatch) => {
-  dispatch({ type: USER_LOGIN_REQUEST });
-  const config = { headers: { "Content-Type": "application/json" } };
-
-  const { data } = await axios.post(
-    "/api/users/login",
-    { email, password },
-    config
-  );
-  dispatch({ type: USER_LOGIN_SUCCESS, payload: data });
-};
 
 export const login = (email, password) => async (dispatch) => {
   try {
